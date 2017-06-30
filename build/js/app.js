@@ -68,4 +68,10 @@ $(document).ready(function() {
 });
               // EPHIE PROGRAMMER
 
+// to show the time when the user has searched for the repositories
+
+$(document).ready(function() {
+  $('#time').text(moment());
+});
+
 },{"./../js/github.js":2}]},{},[3]);
