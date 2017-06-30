@@ -13,9 +13,40 @@
 <body>
   <h1 style="text-align:center">Ephie Github form</h1>
   <div class="container">
-    <h3>Well look at the time! </h3>
-    <h3 id="time"></h3>
 
+
+    <div class="jumbotron">
+      <h3>Kindly search your GitHub Username</h3>
+
+      <!-- form that the user will interact with -->
+      <form>
+        <label for="userName">Please enter your username here: </label>
+        <input type="text" id="userName">
+        <button type="button" id="searchName" class="btn btn-lg"> Search your repository</button>
+      </form>
+      <!-- ######## -->
+      <!-- username details and picture display -->
+      <div class="row">
+      <div class="col-sm-3">
+
+      <div class="showUser">
+        <ul id="userPic" class="list-unstyled">
+        </ul>
+      </div>
+    </div>
+      <!-- ########## -->
+      <!-- where the repos will be displayed -->
+      <div class="col-sm-9">
+      <div id="showRepos">
+        <ul id="repoUrl" class="list-unstyled">
+
+        </ul>
+      </div>
+    </div>
+      </div>
+
+      <!-- ########## -->
+    </div>
   </div>
 
 </body>
