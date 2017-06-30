@@ -119,6 +119,7 @@ gulp.task('serve', function() {
   gulp.watch(['js/*.js'], ['jsBuild']); //this is a task which automatically replace the files on the server and reload the browser when our javascript changes//
   gulp.watch(['bower.json'], ['bowerBuild']); //this is a task for watching the bower manifest file for changes so that whenever we install or uninstall a frontend dependency, our vendor files will be rebuilt and the browser reloaded with the bowerBuild task//
   gulp.watch(['*.html'], ['htmlBuild']); // this is a task to keep track of html files//
+  gulp.watch(['scss/*.scss'], ['cssBuild']);
 });
 
 /*task to enable building, browserification and error correction before reloading*/
